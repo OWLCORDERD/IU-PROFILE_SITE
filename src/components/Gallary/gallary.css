@@ -1,0 +1,100 @@
+/* section 100vh 단위 맞추며 container 부모 영역 생성*/
+
+section .Gallary-container{
+    position: relative;
+    width : 100%;
+    height : 120vh;
+  }
+  
+  .Gallary-container .Gallary-title{
+    position: relative;
+    top : 0;
+    width : 100%;
+    height : 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Gallary-title h1{
+    font-size: 3.5rem;
+    font-weight: 200;
+  }
+
+  .Gallary-container .Gallary-box{
+    position: relative;
+    width : 100%;
+    height : 110vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+  }
+
+  .Gallary-box .Gallary-item{
+    position: relative;
+    width : 100%;
+    height : 50vh;
+  }
+
+  .Gallary-item .Gallary-video{
+    position: relative;
+    top : 50%;
+    width : 40rem;
+    height : 25rem;
+    left : 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  .Gallary-video iframe{
+    position: absolute;
+    width : 100%;
+    height : 100%;
+    object-fit: cover;
+  }
+
+  .Gallary-item .Gallary-list{
+    position: relative;
+    left : 50%;
+    transform: translateX(-50%);
+    width : 100%;
+    height : 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    gap : 2rem;
+    padding : 1rem 4rem;
+  }
+
+  .Gallary-item .Gallary-list-title{
+    position: relative;
+    width : 100%;
+    height : 10vh;
+  }
+
+  .Gallary-list-title h1{
+    font-size: 3rem;
+    color : #000;
+    font-weight: 100;
+    text-align: center;
+  }
+
+  .Gallary-list .Gallary-sub-img{
+    position: relative;
+    width : 20rem;
+    height : 100%;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+
+  .Gallary-sub-img img{
+    position: absolute;
+    width : 100%;
+    height : 100%;
+    object-fit: cover;
+  }
+
+  .Gallary-sub-img:hover{
+    transform: scale(1.05);
+    transition : all 0.5s ease-in-out;
+  }
