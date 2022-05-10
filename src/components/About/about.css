@@ -5,6 +5,7 @@ section .About-IYOU-container{
     width : 100%;
     height : 100%;
     padding : 1rem;
+    margin : 5rem 0;
   }
   
   /* ABOUT 비디오 영역 부모 css */
@@ -39,8 +40,8 @@ section .About-IYOU-container{
   }
 
   .About-title p{
-    width : 25rem;
-    font-size: 2rem;
+    width : 35rem;
+    font-size: 3rem;
     font-weight: 200;
     color :rgba(122, 122, 122, 0.747);
   }
@@ -50,7 +51,7 @@ section .About-IYOU-container{
     display: block;
     width: 100%;
     height: 20vh;
-    bottom : 0;
+    bottom : 5rem;
     overflow: hidden;
     z-index: 1;
     right: 0;

@@ -24,7 +24,7 @@ section .Gallary-container{
   .Gallary-container .Gallary-box{
     position: relative;
     width : 100%;
-    height : 110vh;
+    height : 120vh;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     place-items: center;
@@ -33,7 +33,7 @@ section .Gallary-container{
   .Gallary-box .Gallary-item{
     position: relative;
     width : 100%;
-    height : 50vh;
+    height : 60vh;
   }
 
   .Gallary-item .Gallary-video{
@@ -61,29 +61,15 @@ section .Gallary-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     place-items: center;
-    gap : 2rem;
+    gap : 1rem;
     padding : 1rem 4rem;
-  }
-
-  .Gallary-item .Gallary-list-title{
-    position: relative;
-    width : 100%;
-    height : 10vh;
-  }
-
-  .Gallary-list-title h1{
-    font-size: 3rem;
-    color : #000;
-    font-weight: 100;
-    text-align: center;
   }
 
   .Gallary-list .Gallary-sub-img{
     position: relative;
-    width : 20rem;
+    width : 100%;
     height : 100%;
     overflow: hidden;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     cursor: pointer;
   }
 
@@ -92,9 +78,4 @@ section .Gallary-container{
     width : 100%;
     height : 100%;
     object-fit: cover;
-  }
-
-  .Gallary-sub-img:hover{
-    transform: scale(1.05);
-    transition : all 0.5s ease-in-out;
   }

@@ -29,9 +29,6 @@ const Gallary = () => {
       </div>
 
       <div className = "Gallary-item">
-        <div className = "Gallary-list-title">
-          <h1>GALLARY</h1>
-        </div>
         <div className = "Gallary-list">
           <div className = "Gallary-sub-img">
             <img src = {GallaryPicture1} alt = ""/>

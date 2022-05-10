@@ -19,16 +19,20 @@ const News = () => {
         <div id = "Slider-container-box" className={menuClick==="#introduce" ? "active" : ""}>
           <video src = {first_Slider} autoPlay loop muted/>
           <div id = "Slider-contents" className={menuClick==="#introduce" ? "active" : ""}>
+          <div className = "inner-contents">
         <h1>PROFILE</h1>
-        <p>아이유 프로필 사이트에서 총 정리하는 아이유에 대한 모든 것</p>
+        <p>국민 여동생에서 국민 만능엔터테이너까지의 과정을 모두 담았습니다. </p>
+        </div>
         </div>
         </div>
 
         <div id = "Slider-container-box" className={menuClick==="#GALLARY" ? "active" : ""}>
           <video src = {twice_Slider} autoPlay loop muted/>
           <div id = "Slider-contents" className={menuClick==="#GALLARY" ? "active" : ""}>
+          <div className = "inner-contents">
         <h1>MUSIC</h1>
         <p>데뷔 앨범 및 앨범 수록곡들을 지금 바로 확인해보세요.</p>
+        </div>
         </div>
         </div>
 
@@ -38,8 +42,10 @@ const News = () => {
           <video src = {third_Slider} autoPlay loop muted/>
 
           <div id = "Slider-contents" className={menuClick==="#NEWS" ? "active" : ""}>
+          <div className = "inner-contents">
         <h1>GALLARY</h1>
         <p>다양한 화보와 일상 앨범 화보들을 <br></br> IYOU GALLARY에서 확인해보세요.</p>
+        </div>
         </div>
         </div>
 
