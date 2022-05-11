@@ -45,6 +45,20 @@ const Navbar = () => {
 
     Navbar.classList.toggle("active", this.window.scrollY > 0)
   })
+
+  const dynamicLogo = {
+    initial : {
+      opacity : 0,
+      y : 200
+    },
+    animated : {
+      opacity  : 1,
+      y : 0,
+      transition : {
+        duration : 1
+      }
+    }
+  }
   return (
     <>
       <div className="navbar">
@@ -54,10 +68,10 @@ const Navbar = () => {
           <span></span>
         </div>
 
-        <div className = "logo-contents">
+        <motion.div variants={dynamicLogo} initial="initial" animate="animated" className = "logo-contents">
           <h1>IYOU</h1>
           <p>THE PROFILE SITE</p>
-          </div>
+          </motion.div>
 
 
         <div className="player-button" onClick={() => setShowMenu(!showMenu)}>

@@ -60,13 +60,12 @@
 #Slider-container-box #Slider-contents{
   position: absolute;
   width : 100%;
-  height : 70%;
+  height : 100%;
   opacity: 0;
   padding : 2rem 5rem 2rem 30rem;
   color : #fff;
   z-index: 10;
   top: 0;
-  border-bottom :2px solid rgba(255, 255, 255, 0.5);
 }
 
 #Slider-container-box #Slider-contents.active{
@@ -75,39 +74,67 @@
 
 #Slider-contents .inner-contents{
   position: absolute;
-  bottom : 0;
+  top : 50%;
+  transform: translateY(-50%);
   width : 50rem;
-  height : 30rem;
+  height : 40rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
-.inner-contents h1{
-  font-size: 6rem;
+
+.inner-contents .inner-title{
+  font-size: 10rem;
   margin-top: 1rem;
-  font-family: var(--font-family-Pa);
-  font-weight : 200;
+  font-weight : 100;
   letter-spacing: 1rem;
+  font-family: var(--font-family-Ye);
 }
 
 .inner-contents p{
-  font-size: 2.5rem;
-  font-family: var(--font-family-Na);
-  font-weight : 200;
+  font-size: 1.5rem;
+  font-weight : bold;
+}
+
+.inner-contents .inner-view{
+  position: relative;
+  width : 100%;
+  height : 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.inner-view .view_more{
+  position: relative;
+  width : 50%;
+  height : max-content;
+}
+
+.view_more h1{
+  font-size: 2rem;
+  color : #fff;
+  font-weight: 200;
+  font-family: var(--font-family-Co);
+}
+
+.inner-view .play-button{
+  font-size: 3rem;
+  font-weight: 100;
 }
 
 .Slider-banner .Slider-box{
   position: absolute;
   left : 0;
-  width : 10%;
-  height : 100%;
+  bottom : 0;
+  width : 100%;
+  height : 20rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: space-around;
   padding : 2rem;
-  border-right: 2px solid rgba(255, 255, 255, 0.5);
   z-index: 10;
 }
 
@@ -117,10 +144,10 @@
   top : 30%;
   transform: translateY(-30%);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  width : 10rem;
+  width : 40rem;
   height : 20rem;
 }
 
