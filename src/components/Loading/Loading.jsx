@@ -3,7 +3,7 @@ import "./Loading.css"
 import ClipLoader from "react-spinners/ClipLoader"
 import { css } from 'styled-components';
 import {motion} from "framer-motion"
-import 공연장 from "../../assets/image/콘서트 공연장.jpg"
+import 프로필 from "../../assets/image/Banner-background.jpg"
 
 const Loading = (props) => {
 
@@ -41,6 +41,22 @@ const Loading = (props) => {
     }
   }
 
+  const dynamicSubTxt = {
+    initial : {
+      opacity : 0,
+      y : 50
+    },
+
+    animated : {
+      opacity : 1,
+      y : 0,
+      transition : {
+        duration : 1,
+        delay : 0.2
+      }
+    }
+  }
+
   return (
     <div className = "Loading-container">
 
@@ -63,8 +79,16 @@ const Loading = (props) => {
 
       </div>
 
+      <div className = "contents-left">
+        <motion.h1 variants={dynamicSubTxt} initial = "initial" animate = "animated">PROFILE</motion.h1>
+      </div>
+
       <div className = "loading-image">
-        <img src = {공연장} alt = ""/>
+        <img src = {프로필} alt = ""/>
+      </div>
+
+      <div className = "contents-right">
+        <motion.h1  variants={dynamicSubTxt} initial = "initial" animate = "animated">MUSIC</motion.h1>
       </div>
 
     </div>
