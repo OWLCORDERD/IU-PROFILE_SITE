@@ -75,7 +75,8 @@
 #Slider-contents .inner-contents{
   position: absolute;
   top : 50%;
-  transform: translateY(-50%);
+  left : 50%;
+  transform: translate(-50%, -50%);
   width : 50rem;
   height : 40rem;
   display: flex;
@@ -90,6 +91,7 @@
   font-weight : 100;
   letter-spacing: 1rem;
   font-family: var(--font-family-Ye);
+  text-align: center;
 }
 
 .inner-contents p{
@@ -103,7 +105,7 @@
   height : 10rem;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 

@@ -89,6 +89,29 @@
     "img_url" : "./Magazine/MARIE CLAIRE/MARIE CLAIRE_5월호_6.jpg"
   }
 
+],
+
+"J.ESTINA" : [
+  {
+    "id" : 1,
+    "title" : "J.ESTINA X IU COLLECTION",
+    "img_url" : "./Magazine/J.ASTINA/HIP SUMMER/HIP SUMMER COLLECTION-1.jpg"
+  },
+  {
+    "id" : 2,
+    "title" : "J.ESTINA X IU COLLECTION",
+    "img_url" : "./Magazine/J.ASTINA/HIP SUMMER/HIP SUMMER COLLECTION-2.jpg"
+  },
+  {
+    "id" : 3,
+    "title" : "J.ESTINA X IU COLLECTION",
+    "img_url" : "./Magazine/J.ASTINA/HIP SUMMER/HIP SUMMER COLLECTION-3.jpg"
+  },
+  {
+    "id" : 4,
+    "title" : "J.ESTINA X IU COLLECTION",
+    "img_url" : "./Magazine/J.ASTINA/HIP SUMMER/HIP SUMMER COLLECTION-4.jpg"
+  }
 ]
 
 }
