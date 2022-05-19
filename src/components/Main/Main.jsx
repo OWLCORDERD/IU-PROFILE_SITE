@@ -4,6 +4,7 @@ import About from "../About/About"
 import Gallary from "../Gallary/Gallary"
 import Banner from "../Banner/Banner"
 import Magazine from "../Magazine/Magazine";
+import Youtube from "../Youtube/Youtube";
 import Loading from "../Loading/Loading";
 
 const Main = () => {
@@ -47,6 +48,10 @@ const Main = () => {
 
           <section id = "SEC3">
           <Magazine/>
+          </section>
+
+          <section id = "SEC4">
+            <Youtube/>
           </section>
           </div>
 )
